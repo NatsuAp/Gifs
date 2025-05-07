@@ -1,0 +1,13 @@
+
+<div >
+  <div id="hola" *ngFor="let gif of gifs" class="col" style="width: 14rem;">
+
+    <img class="card-img-top" [src]="gif.images.downsized_medium.url" alt="Card image cap">
+    
+    <div class="card-body">
+      <h5 class="card-title">{{gif.title}}</h5>
+      <p class="card-text"></p>
+    
+    </div>
+  </div>
+</div>

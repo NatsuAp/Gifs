@@ -1,0 +1,24 @@
+<body>
+  <div class="offcanvas offcanvas-start show text-bg-dark"  id="offcanvasDark" >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasDarkLabel">Historial de Busqueda</h5>
+      
+    </div>
+    <div id="canvasBody"class="offcanvas-body">
+      @for (gif of gifs; track gif; let contador = $index) {
+        
+          <button (click) ="historial(gif)" 
+          id ="boton" 
+          type="button" 
+          class=" mb-3 btn btn-outline-light">
+          {{ gif}}</button>
+        
+        
+        } 
+    </div>
+    
+  </div>
+</body>
+
+
+
